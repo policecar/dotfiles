@@ -1,0 +1,13 @@
+{
+  "name": "shuk",
+  "owner": {
+    "name": "priska aksirp"
+  },
+  "plugins": [
+    {
+      "name": "plugin",
+      "source": "./plugin",
+      "description": "A plugin"
+    }
+  ]
+}
