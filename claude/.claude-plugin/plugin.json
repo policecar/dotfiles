@@ -1,8 +1,8 @@
 {
-  "name": "plugin",
-  "description": "A plugin",
-  "version": "0.1.0",
+  "name": "research-ml-config",
+  "description": "Claude Code configuration for ML/AI research and development work",
+  "version": "1.0.0",
   "author": {
-    "name": "priska aksirp"
+    "name": "policecar"
   }
 }
