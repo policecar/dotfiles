@@ -1,0 +1,28 @@
+{
+  "hooks": [
+    {
+      "name": "lint-on-edit",
+      "description": "Run linter when files are edited",
+      "events": ["edit"],
+      "command": "echo 'File edited: {{file_path}}' && if command -v eslint &> /dev/null; then eslint {{file_path}} || true; fi",
+      "enabled": false,
+      "comment": "Enable this to run eslint automatically on file edits. Set enabled to true when ready."
+    },
+    {
+      "name": "test-on-commit",
+      "description": "Remind to run tests before commits",
+      "events": ["pre-commit"],
+      "command": "echo 'Remember to run tests before committing!'",
+      "enabled": false,
+      "comment": "Enable this to get reminders to run tests. Customize the command to actually run your test suite."
+    },
+    {
+      "name": "security-check",
+      "description": "Run security checks on dependency changes",
+      "events": ["edit"],
+      "command": "if [[ '{{file_path}}' == *'package.json'* ]] || [[ '{{file_path}}' == *'requirements.txt'* ]]; then echo 'Dependency file changed. Consider running security audit.'; fi",
+      "enabled": false,
+      "comment": "Enable this to get reminders when dependency files change."
+    }
+  ]
+}

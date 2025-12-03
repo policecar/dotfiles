@@ -1,8 +1,8 @@
 {
-  "name": "plugin",
-  "description": "A plugin",
-  "version": "0.1.0",
+  "name": "policecar-preferences",
+  "description": "Personal Claude Code configuration with custom preferences, commands, and skills",
+  "version": "1.0.0",
   "author": {
-    "name": "priska aksirp"
+    "name": "policecar"
   }
 }
